@@ -1,0 +1,291 @@
+@article{DBLP:journals/corr/abs-1711-09869,
+  author    = {Lo{\"{\i}}c Landrieu and
+               Martin Simonovsky},
+  title     = {Large-scale Point Cloud Semantic Segmentation with Superpoint Graphs},
+  journal   = {CoRR},
+  volume    = {abs/1711.09869},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1711.09869},
+  eprinttype = {arXiv},
+  eprint    = {1711.09869},
+  timestamp = {Mon, 13 Aug 2018 16:47:51 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1711-09869.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@article{DBLP:journals/corr/abs-1801-07829,
+  author    = {Yue Wang and
+               Yongbin Sun and
+               Ziwei Liu and
+               Sanjay E. Sarma and
+               Michael M. Bronstein and
+               Justin M. Solomon},
+  title     = {Dynamic Graph {CNN} for Learning on Point Clouds},
+  journal   = {CoRR},
+  volume    = {abs/1801.07829},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1801.07829},
+  eprinttype = {arXiv},
+  eprint    = {1801.07829},
+  timestamp = {Thu, 16 Apr 2020 07:55:10 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1801-07829.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@article{DBLP:journals/corr/abs-2003-00982,
+  author    = {Vijay Prakash Dwivedi and
+               Chaitanya K. Joshi and
+               Thomas Laurent and
+               Yoshua Bengio and
+               Xavier Bresson},
+  title     = {Benchmarking Graph Neural Networks},
+  journal   = {CoRR},
+  volume    = {abs/2003.00982},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2003.00982},
+  eprinttype = {arXiv},
+  eprint    = {2003.00982},
+  timestamp = {Sat, 23 Jan 2021 01:14:30 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2003-00982.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@article{PARISOT2018117,
+title = {Disease prediction using graph convolutional networks: Application to Autism Spectrum Disorder and Alzheimer’s disease},
+journal = {Medical Image Analysis},
+volume = {48},
+pages = {117-130},
+year = {2018},
+issn = {1361-8415},
+doi = {https://doi.org/10.1016/j.media.2018.06.001},
+url = {https://www.sciencedirect.com/science/article/pii/S1361841518303554},
+author = {Sarah Parisot and Sofia Ira Ktena and Enzo Ferrante and Matthew Lee and Ricardo Guerrero and Ben Glocker and Daniel Rueckert},
+keywords = {Graphs, Graph convolutional networks, Spectral theory, Semi-supervised classification, Autism Spectrum Disorder, Alzheimer’s disease},
+abstract = {Graphs are widely used as a natural framework that captures interactions between individual elements represented as nodes in a graph. In medical applications, specifically, nodes can represent individuals within a potentially large population (patients or healthy controls) accompanied by a set of features, while the graph edges incorporate associations between subjects in an intuitive manner. This representation allows to incorporate the wealth of imaging and non-imaging information as well as individual subject features simultaneously in disease classification tasks. Previous graph-based approaches for supervised or unsupervised learning in the context of disease prediction solely focus on pairwise similarities between subjects, disregarding individual characteristics and features, or rather rely on subject-specific imaging feature vectors and fail to model interactions between them. In this paper, we present a thorough evaluation of a generic framework that leverages both imaging and non-imaging information and can be used for brain analysis in large populations. This framework exploits Graph Convolutional Networks (GCNs) and involves representing populations as a sparse graph, where its nodes are associated with imaging-based feature vectors, while phenotypic information is integrated as edge weights. The extensive evaluation explores the effect of each individual component of this framework on disease prediction performance and further compares it to different baselines. The framework performance is tested on two large datasets with diverse underlying data, ABIDE and ADNI, for the prediction of Autism Spectrum Disorder and conversion to Alzheimer’s disease, respectively. Our analysis shows that our novel framework can improve over state-of-the-art results on both databases, with 70.4% classification accuracy for ABIDE and 80.0% for ADNI.}
+}
+@article{HAO2022102217,
+title = {Uncertainty-guided graph attention network for parapneumonic effusion diagnosis},
+journal = {Medical Image Analysis},
+volume = {75},
+pages = {102217},
+year = {2022},
+issn = {1361-8415},
+doi = {https://doi.org/10.1016/j.media.2021.102217},
+url = {https://www.sciencedirect.com/science/article/pii/S1361841521002620},
+author = {Jinkui Hao and Jiang Liu and Ella Pereira and Ri Liu and Jiong Zhang and Yangfan Zhang and Kun Yan and Yan Gong and Jianjun Zheng and Jingfeng Zhang and Yonghuai Liu and Yitian Zhao},
+keywords = {Parapneumonic effusion, Uncertainty, Graph, Deep Learning, CT},
+abstract = {Parapneumonic effusion (PPE) is a common condition that causes death in patients hospitalized with pneumonia. Rapid distinction of complicated PPE (CPPE) from uncomplicated PPE (UPPE) in Computed Tomography (CT) scans is of great importance for the management and medical treatment of PPE. However, UPPE and CPPE display similar appearances in CT scans, and it is challenging to distinguish CPPE from UPPE via a single 2D CT image, whether attempted by a human expert, or by any of the existing disease classification approaches. 3D convolutional neural networks (CNNs) can utilize the entire 3D volume for classification: however, they typically suffer from the intrinsic defect of over-fitting. Therefore, it is important to develop a method that not only overcomes the heavy memory and computational requirements of 3D CNNs, but also leverages the 3D information. In this paper, we propose an uncertainty-guided graph attention network (UG-GAT) that can automatically extract and integrate information from all CT slices in a 3D volume for classification into UPPE, CPPE, and normal control cases. Specifically, we frame the distinction of different cases as a graph classification problem. Each individual is represented as a directed graph with a topological structure, where vertices represent the image features of slices, and edges encode the spatial relationship between them. To estimate the contribution of each slice, we first extract the slice representations with uncertainty, using a Bayesian CNN: we then make use of the uncertainty information to weight each slice during the graph prediction phase in order to enable more reliable decision-making. We construct a dataset consisting of 302 chest CT volumetric data from different subjects (99 UPPE, 99 CPPE and 104 normal control cases) in this study, and to the best of our knowledge, this is the first attempt to classify UPPE, CPPE and normal cases using a deep learning method. Extensive experiments show that our approach is lightweight in demands, and outperforms accepted state-of-the-art methods by a large margin. Code is available at https://github.com/iMED-Lab/UG-GAT.}
+}
+@article{Michael2017Geometric,
+  title={Geometric Deep Learning: Going beyond Euclidean data},
+  author={Michael and M. and Bronstein and Joan and Bruna and Yann and LeCun and Arthur and Szlam and Pierre},
+  journal={IEEE Signal Processing Magazine},
+  volume={34},
+  number={4},
+  pages={18-42},
+  year={2017},
+}
+@article{DBLP:journals/corr/DefferrardBV16,
+  author    = {Micha{\"{e}}l Defferrard and
+               Xavier Bresson and
+               Pierre Vandergheynst},
+  title     = {Convolutional Neural Networks on Graphs with Fast Localized Spectral
+               Filtering},
+  journal   = {CoRR},
+  volume    = {abs/1606.09375},
+  year      = {2016},
+  url       = {http://arxiv.org/abs/1606.09375},
+  eprinttype = {arXiv},
+  eprint    = {1606.09375},
+  timestamp = {Mon, 13 Aug 2018 16:48:03 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/DefferrardBV16.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@article{DBLP:journals/corr/KipfW16,
+  author    = {Thomas N. Kipf and
+               Max Welling},
+  title     = {Semi-Supervised Classification with Graph Convolutional Networks},
+  journal   = {CoRR},
+  volume    = {abs/1609.02907},
+  year      = {2016},
+  url       = {http://arxiv.org/abs/1609.02907},
+  eprinttype = {arXiv},
+  eprint    = {1609.02907},
+  timestamp = {Mon, 13 Aug 2018 16:48:31 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/KipfW16.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@article{article,
+author = {Veličković, Petar and Cucurull, Guillem and Casanova, Arantxa and Romero, Adriana and Lio, Pietro and Bengio, Y.},
+year = {2017},
+month = {10},
+pages = {},
+title = {Graph Attention Networks}
+}
+@article{DBLP:journals/corr/abs-1905-02850,
+  author    = {Boris Knyazev and
+               Graham W. Taylor and
+               Mohamed R. Amer},
+  title     = {Understanding attention in graph neural networks},
+  journal   = {CoRR},
+  volume    = {abs/1905.02850},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1905.02850},
+  eprinttype = {arXiv},
+  eprint    = {1905.02850},
+  timestamp = {Mon, 13 Jun 2022 11:19:25 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1905-02850.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@article{DBLP:journals/corr/GilmerSRVD17,
+  author    = {Justin Gilmer and
+               Samuel S. Schoenholz and
+               Patrick F. Riley and
+               Oriol Vinyals and
+               George E. Dahl},
+  title     = {Neural Message Passing for Quantum Chemistry},
+  journal   = {CoRR},
+  volume    = {abs/1704.01212},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1704.01212},
+  eprinttype = {arXiv},
+  eprint    = {1704.01212},
+  timestamp = {Mon, 13 Aug 2018 16:48:42 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/GilmerSRVD17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@article{DBLP:journals/corr/abs-2004-05718,
+  author    = {Gabriele Corso and
+               Luca Cavalleri and
+               Dominique Beaini and
+               Pietro Li{\`{o}} and
+               Petar Velickovic},
+  title     = {Principal Neighbourhood Aggregation for Graph Nets},
+  journal   = {CoRR},
+  volume    = {abs/2004.05718},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2004.05718},
+  eprinttype = {arXiv},
+  eprint    = {2004.05718},
+  timestamp = {Tue, 14 Apr 2020 16:40:34 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2004-05718.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@article{DBLP:journals/corr/abs-2006-05205,
+  author    = {Uri Alon and
+               Eran Yahav},
+  title     = {On the Bottleneck of Graph Neural Networks and its Practical Implications},
+  journal   = {CoRR},
+  volume    = {abs/2006.05205},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2006.05205},
+  eprinttype = {arXiv},
+  eprint    = {2006.05205},
+  timestamp = {Fri, 12 Jun 2020 14:02:57 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2006-05205.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@article{DBLP:journals/corr/abs-1806-02952,
+  author    = {Gusi Te and
+               Wei Hu and
+               Zongming Guo and
+               Amin Zheng},
+  title     = {{RGCNN:} Regularized Graph {CNN} for Point Cloud Segmentation},
+  journal   = {CoRR},
+  volume    = {abs/1806.02952},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1806.02952},
+  eprinttype = {arXiv},
+  eprint    = {1806.02952},
+  timestamp = {Wed, 04 Sep 2019 14:40:26 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1806-02952.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@article{DBLP:journals/corr/XuZCF17,
+  author    = {Danfei Xu and
+               Yuke Zhu and
+               Christopher B. Choy and
+               Li Fei{-}Fei},
+  title     = {Scene Graph Generation by Iterative Message Passing},
+  journal   = {CoRR},
+  volume    = {abs/1701.02426},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1701.02426},
+  eprinttype = {arXiv},
+  eprint    = {1701.02426},
+  timestamp = {Mon, 24 Feb 2020 15:00:26 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/XuZCF17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@article{DBLP:journals/corr/abs-1807-00119,
+  author    = {Yong Liu and
+               Ruiping Wang and
+               Shiguang Shan and
+               Xilin Chen},
+  title     = {Structure Inference Net: Object Detection Using Scene-Level Context
+               and Instance-Level Relationships},
+  journal   = {CoRR},
+  volume    = {abs/1807.00119},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1807.00119},
+  eprinttype = {arXiv},
+  eprint    = {1807.00119},
+  timestamp = {Thu, 02 Dec 2021 17:27:17 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1807-00119.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@INPROCEEDINGS{8953276,
+  author={Chen, Zhao-Min and Wei, Xiu-Shen and Wang, Peng and Guo, Yanwen},
+  booktitle={2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+  title={Multi-Label Image Recognition With Graph Convolutional Networks}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={5172-5181},
+  doi={10.1109/CVPR.2019.00532}
+}
+@article{DBLP:journals/corr/abs-1801-07455,
+  author    = {Sijie Yan and
+               Yuanjun Xiong and
+               Dahua Lin},
+  title     = {Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action
+               Recognition},
+  journal   = {CoRR},
+  volume    = {abs/1801.07455},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1801.07455},
+  eprinttype = {arXiv},
+  eprint    = {1801.07455},
+  timestamp = {Mon, 13 Aug 2018 16:48:19 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1801-07455.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@article{DBLP:journals/corr/abs-1904-12659,
+  author    = {Maosen Li and
+               Siheng Chen and
+               Xu Chen and
+               Ya Zhang and
+               Yanfeng Wang and
+               Qi Tian},
+  title     = {Actional-Structural Graph Convolutional Networks for Skeleton-based
+               Action Recognition},
+  journal   = {CoRR},
+  volume    = {abs/1904.12659},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1904.12659},
+  eprinttype = {arXiv},
+  eprint    = {1904.12659},
+  timestamp = {Fri, 20 Mar 2020 15:54:45 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1904-12659.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@INPROCEEDINGS{8954160,
+  author={Shi, Lei and Zhang, Yifan and Cheng, Jian and Lu, Hanqing},
+  booktitle={2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+  title={Skeleton-Based Action Recognition With Directed Graph Neural Networks}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={7904-7913},
+  doi={10.1109/CVPR.2019.00810}
+}
+
+
+
